@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(3, 3, 63);
+  color: white;
+  width: 100%;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgb(0, 0, 0);
+  padding: 2rem 5.5%;
+}
+nav a {
+  float: right;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+#shubham {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: inline;
+}
+#second {
+  display: inline-flex;
+  float: right;
+  gap: 3rem;
+}
+#about {
+  position: relative;
+  height: 40rem;
+  padding: 2rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+#profile {
+  position: absolute;
+  top: 2rem;
+  border-radius: 20rem;
+  right: 10rem;
+  height: 30rem;
+  width: 29rem;
+}
+h4 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+p {
+  width: 45rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 5rem;
+}
+button {
+  height: 3.5rem;
+  width: 12rem;
+  background: transparent;
+  border: solid white 2px;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+#download {
+  width: 15rem;
+  margin-right: 2rem;
+}
+#x {
+  width: 2rem;
+  height: 2rem;
+}
+#face {
+  width: 2rem;
+  height: 2rem;
+}
+#insta {
+  width: 2rem;
+  height: 2rem;
+}
+#link {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+#pj {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+#project {
+  position: relative;
+  height: 49rem;
+  padding-left: 5rem;
+  /* border: solid wheat; */
+}
+a{
+}
+img{
+  /* border: solid white; */
+  width: 15rem;
+}
+#todo {
+  position: absolute;
+  top: 7rem;
+  left:20.2rem;
+
+}
+
+#portfolio{
+  position: absolute;
+  height: 13.5rem;
+  width: 25rem;
+  left: 51rem;
+}
+#rice{
+    position: absolute;
+  left: 51rem;
+  top:20.7rem
+}
+#booking{
+    position: absolute;
+  left: 35.5rem;
+}
