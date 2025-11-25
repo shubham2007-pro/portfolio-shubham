@@ -1,134 +1,505 @@
-* {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
-}
+html { scroll-behavior: smooth; }
+
+/* Fix scroll hidden behind navbar */
+section, h2, h3 { scroll-margin-top: 6rem; }
+
 body {
-  background-color: rgb(3, 3, 63);
-  color: white;
-  width: 100%;
+    background-color: #000021;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: Source Serif Pro, serif;
+    text-decoration: none;
 }
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgb(0, 0, 0);
-  padding: 2rem 5.5%;
+
+#first {
+    background-color: #12123E;
+    height: 4rem;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    padding: 0 2rem;
+    top: 0rem;
+    z-index: 999;
 }
-nav a {
-  float: right;
-  color: white;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
+
 #shubham {
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  display: inline;
+    font-size: 1.6rem;
+    margin-left: -70rem;
 }
+
 #second {
-  display: inline-flex;
-  float: right;
-  gap: 3rem;
+    display: flex;
+    gap: 5rem;
+    font-size: 1.5rem;
+    margin-left: 50rem;
 }
-#about {
-  position: relative;
-  height: 40rem;
-  padding: 2rem;
-  padding-top: 5rem;
-  padding-left: 5rem;
+
+#second a {
+    text-decoration: none;
+    color: white;
+    border-radius: 0.3rem;
 }
-#profile {
-  position: absolute;
-  top: 2rem;
-  border-radius: 20rem;
-  right: 10rem;
-  height: 30rem;
-  width: 29rem;
+
+#second a:hover {
+    background-color: #1f1f5e;
+    outline: 0.3rem solid #1f1f5e;
+    transition: 0.3s;
 }
-h4 {
-  font-size: 3rem;
-  margin-bottom: 3rem;
+
+/* FIXED: this was blocking scroll because of border + tiny size */
+#home {
+    margin-top: 5rem;
+    visibility: hidden;
+    position: relative;
+    top: -3rem;
 }
-p {
-  width: 45rem;
-  font-size: 1.2rem;
-  text-align: justify;
-  margin-bottom: 5rem;
-}
-button {
-  height: 3.5rem;
-  width: 12rem;
-  background: transparent;
-  border: solid white 2px;
-  border-radius: 2rem;
-  font-size: 1rem;
-  color: white;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-#download {
-  width: 15rem;
-  margin-right: 2rem;
-}
-#x {
-  width: 2rem;
-  height: 2rem;
-}
-#face {
-  width: 2rem;
-  height: 2rem;
-}
+
 #insta {
-  width: 2rem;
-  height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    bottom: 77rem;
+    left:10rem;
 }
+
+#face {
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    bottom: 77rem;
+    left:10rem;
+}
+
+#x {
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    bottom: 77rem;
+    left:10rem;
+}
+
 #link {
-  width: 2rem;
-  height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    position: relative;
+    bottom: 77rem;
+    left:10rem;
 }
 
-
-#pj {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-size: 2.5rem;
-  letter-spacing: 1px;
+#shub {
+    text-align: center;
+    margin-top: 7.5rem;
+    position: relative;
+    bottom: 80rem;
 }
+
+#shubh {
+    text-align: center;
+    margin-top: 0.2rem;
+    position: relative;
+    bottom: 80rem;
+    margin: 0;
+}
+
+#download {
+    display: inline-block;
+    background-color: #12123E;
+    border: 2px solid #ffffff;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    font-size: 1.3rem;
+}
+
+#git {
+    display: inline-block;
+    background-color: #12123E;
+    border: 2px solid #ffffff;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
+
+#about {
+    position: relative;
+    top: -4rem;
+    width: 10rem;
+    margin-left: 11rem;
+}
+
+#para {
+    width: 62rem;
+    top: 9rem;
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: 3.5rem;
+}
+
+#left {
+    width: 52rem;
+    top: 11rem;
+    position: absolute;
+    font-size: 1.3rem;
+    margin-left: 3.5rem;
+}
+
+#profile {
+    width: 13rem;
+    height: 15rem;
+    position: absolute;
+    right: 16.5rem;
+    border-radius: 0.5rem;
+    top: 8rem;
+    border: #000000;
+}
+
 #project {
-  position: relative;
-  height: 49rem;
-  padding-left: 5rem;
-  /* border: solid wheat; */
+    width: 10rem;
+    margin-left: 10rem;
 }
-a{
+
+/* CONTACT BOX */
+#msg {
+    position: relative;
+    text-align: center;
+    background-color: #12123E;
+    width: 36rem;
+    margin-left: 33.5rem;
+    height: 23rem;
+    border-radius: 1rem;
+    top: 35rem;
 }
-img{
-  /* border: solid white; */
-  width: 15rem;
+
+#contact {
+    margin-left: 10rem;
+    margin-top: 25rem;
+    position: relative;
+    top: 35rem;
 }
+
+#na {
+    outline: none;
+    border: none;
+    border-bottom: solid #000021 0.1rem;
+    background-color: #12123E;
+    color: white;
+    position: relative;
+    bottom:1.5rem;
+    left:6rem;
+}
+
+#na:focus { outline: none; }
+
+#em{
+    outline: none;
+    border: none;
+    border-bottom: solid #000021 0.1rem;
+    background-color: #12123E;
+    color: white;
+    position: relative;
+    bottom:1rem;
+    left:6rem;
+}
+
+#em:focus{ outline: none; }
+
+#mes{
+    outline: none;
+    border: none;
+    border-bottom: solid #000021 0.1rem;
+    background-color: #12123E;
+    color: white;
+    position: relative;
+    bottom:1.4rem;
+    left:9.1rem;
+}
+
+#mes:focus{ outline: none; }
+
+#any {
+    position: relative;
+    top: 10rem;
+    right: 10rem;
+    font-size: 1.5rem;
+}
+
+#name {
+    position: relative;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    left: 2.5rem;
+}
+
+#email {
+    margin-top: -0.5rem;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+}
+
+#message {
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+    margin-left: 1.7rem;
+    margin-left: 6.7rem;
+}
+
+#btn {
+    position: relative;
+    top: 3.5rem;
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #000021;
+    color: white;
+    right:5rem;
+    border: #FFFFFF;
+}
+
+#btn:hover {
+    background-color: #1f1f5e;
+    outline: 0.3rem solid #1f1f5e;
+    transition: 0.3s;
+}
+
+#food {
+    width: 9.8rem;
+    height: 20rem;
+    border-radius: 0.3rem;
+}
+
+#app {
+    position: relative;
+    bottom: -0.1rem;
+    right: -0.7rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 10rem;
+}
+
+#project1 {
+    background-color: #12123E;
+    position: relative;
+    bottom: 53rem;
+    left: 16rem;
+    width: 9.8rem;
+    border-radius: 0.4rem;
+    height: 24rem;
+    border: 2.2px solid #ffffff;
+}
+
+#figma0{
+    position: relative;
+    top: 0.1rem;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+}
+
+#figma0_1{
+    background-color: #000021;
+    position: absolute;
+    top: 22rem;
+    left: 1.4rem;
+    height: 1.5rem;
+    width: 6.5rem;
+    border-radius: 0.3rem;
+}
+
+#project2 {
+    background-color: #12123E;
+    position: relative;
+    bottom: 77.3rem;
+    left: 30rem;
+    width: 9.6rem;
+    border-radius: 0.4rem;
+    height: 24rem;
+    border: 2px solid #ffffff;
+}
+
 #todo {
-  position: absolute;
-  top: 7rem;
-  left:20.2rem;
-
+    width: 9.8rem;
+    height: 20rem;
+    border-radius: 0.3rem;
+    margin-left: -0.1rem;
 }
 
-#portfolio{
-  position: absolute;
-  height: 13.5rem;
-  width: 25rem;
-  left: 51rem;
+#app1 {
+    position: relative;
+    bottom: -0.2rem;
+    right: -2.5rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 10rem;
 }
-#rice{
-    position: absolute;
-  left: 51rem;
-  top:20.7rem
+
+#figma1{
+    position: relative;
+    top: 0.1rem;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
 }
-#booking{
+
+#figma1_1{
+    background-color: #000021;
     position: absolute;
-  left: 35.5rem;
+    top: 22rem;
+    left: 1.4rem;
+    height: 1.5rem;
+    width: 6.5rem;
+    border-radius: 0.3rem;
+}
+
+#project3 {
+    background-color: #12123E;
+    position: relative;
+    bottom: 101.5rem;
+    left: 45rem;
+    width: 38.8rem;
+    border-radius: 0.4rem;
+    height: 22rem;
+    border: 2px solid #ffffff;
+}
+
+#portfolio {
+    width: auto;
+    height: 20rem;
+    border-radius: 0.3rem;
+}
+
+#app2 {
+    position: relative;
+    bottom: -0.2rem;
+    right: -14rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 15rem;
+}
+
+#figma2{
+    position: relative;
+    top: 0.1rem;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+}
+
+#figma2_1{
+    background-color: #000021;
+    position: absolute;
+    top: 20.25rem;
+    left:22.7rem;
+    height: 1.5rem;
+    width: 6.5rem;
+    border-radius: 0.3rem;
+}
+
+#project4 {
+    background-color: #12123E;
+    position: relative;
+    bottom: 95rem;
+    left: 16rem;
+    width: 16rem;
+    border-radius: 0.4rem;
+    height: 22rem;
+    border: 2px solid #ffffff;
+}
+
+#rice {
+    width: auto;
+    height: 20rem;
+    border-radius: 0.3rem;
+}
+
+#app3 {
+    position: relative;
+    bottom: -0.2rem;
+    right: -1rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 15rem;
+}
+
+#figma3{
+    position: relative;
+    top: 0.1rem;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+}
+
+#figma3_1{
+    background-color: #000021;
+    position: absolute;
+    top: 20.25rem;
+    left:8.7rem;
+    height: 1.5rem;
+    width: 6.5rem;
+    border-radius: 0.3rem;
+}
+
+#project5 {
+    background-color: #12123E;
+    position: relative;
+    bottom: 117.2rem;
+    left: 37rem;
+    width: 9.8rem;
+    border-radius: 0.4rem;
+    height: 24rem;
+    border: 2px solid #ffffff;
+}
+
+#booking {
+    width: 9.8rem;
+    height: 20rem;
+    border-radius: 0.3rem;
+}
+
+#app4 {
+    position: relative;
+    bottom: -0.2rem;
+    left:1.9rem;
+    margin: 0;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 15rem;
+}
+
+#figma4{
+    position: relative;
+    top: 0.1rem;
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+}
+
+#figma4_1{
+    background-color: #000021;
+    position: absolute;
+    top: 22rem;
+    left:1.4rem;
+    height: 1.5rem;
+    width: 6.5rem;
+    border-radius: 0.3rem;
+}
+
+#on {
+    margin-left: 10rem;
+    border: solid;
+    width: 15rem;
+    position: relative;
+    top: 40rem;
 }
